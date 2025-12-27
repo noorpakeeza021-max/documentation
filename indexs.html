@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Fundamentals</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>HTML & CSS Docs</header>
+    <ul>
+      <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+      <a class="nav-link" href="#Basic_HTML_Structure">Basic HTML Structure</a>
+      <a class="nav-link" href="#Common_HTML_Elements">Common HTML Elements</a>
+      <a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a>
+      <a class="nav-link" href="#CSS_Selectors_and_Box_Model">CSS Selectors and Box Model</a>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction_to_HTML">
+      <header>Introduction to HTML</header>
+      <p>HTML (HyperText Markup Language) is the foundation of every webpage. It defines the structure and content of a website using elements and tags.</p>
+      <p>HTML documents are made up of elements wrapped in opening and closing tags, like <code>&lt;p&gt;</code> for paragraphs.</p>
+      <ul>
+        <li>HTML describes content semantically</li>
+        <li>It works together with CSS and JavaScript</li>
+        <li>Modern HTML5 includes powerful features like video and canvas</li>
+      </ul>
+      <p>The latest version is HTML5, which introduced many new elements and APIs.</p>
+    </section>
+
+    <section class="main-section" id="Basic_HTML_Structure">
+      <header>Basic HTML Structure</header>
+      <p>Every HTML page follows a standard skeleton:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;My First Heading&lt;/h1&gt;
+  &lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <p>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document as HTML5.</p>
+      <p>The <code>&lt;html&gt;</code> element is the root, containing <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>.</p>
+    </section>
+
+    <section class="main-section" id="Common_HTML_Elements">
+      <header>Common HTML Elements</header>
+      <p>Some frequently used elements include:</p>
+      <ul>
+        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> - Headings</li>
+        <li><code>&lt;p&gt;</code> - Paragraphs</li>
+        <li><code>&lt;a&gt;</code> - Links</li>
+        <li><code>&lt;img&gt;</code> - Images</li>
+        <li><code>&lt;div&gt;</code> - Generic container</li>
+      </ul>
+      <p>Links are created with the <code>&lt;a href="url"&gt;</code> tag.</p>
+      <p>Images use <code>&lt;img src="image.jpg" alt="description"&gt;</code>.</p>
+    </section>
+
+    <section class="main-section" id="Introduction_to_CSS">
+      <header>Introduction to CSS</header>
+      <p>CSS (Cascading Style Sheets) controls the presentation of HTML content – colors, layout, fonts, and animations.</p>
+      <p>You can apply CSS in three ways:</p>
+      <ul>
+        <li>Inline - using the <code>style</code> attribute</li>
+        <li>Internal - inside a <code>&lt;style&gt;</code> tag in the head</li>
+        <li>External - linking a separate .css file</li>
+      </ul>
+      <p>External stylesheets are recommended for larger projects.</p>
+    </section>
+
+    <section class="main-section" id="CSS_Selectors_and_Box_Model">
+      <header>CSS Selectors and Box Model</header>
+      <p>CSS selectors target elements to style them. Examples:</p>
+      <code>p { color: blue; }</code> <br>
+      <code>.class { font-weight: bold; }</code> <br>
+      <code>#id { background: yellow; }</code>
+      <p>The box model consists of content, padding, border, and margin around every element.</p>
+      <p>Use <code>box-sizing: border-box;</code> for more intuitive sizing.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
